@@ -1,0 +1,116 @@
+body {
+  background-color: #f7e9dc;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+}
+.container .head {
+  background-color: #ec755d;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+.container .head .text p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.768);
+}
+.container .head .text h2 {
+  margin: 0;
+  margin-top: 15px;
+  color: white;
+}
+.container .days {
+  margin: 30px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .days .day .container-progress {
+  height: 200px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 4px;
+  position: relative;
+}
+.container .days .day .progress {
+  max-width: 80px;
+  background: #ec755d;
+  border-radius: 4px;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container .days .day .progress:hover {
+  opacity: 0.8;
+}
+.container .days .day .progress:hover::before {
+  content: attr(data-price);
+}
+.container .days .day .progress::before {
+  transition: 0.3s;
+  padding: 5px;
+  position: absolute;
+  min-width: 130%;
+  height: 20px;
+  background: black;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 2.5px;
+  color: white;
+  top: -35px;
+  text-align: center;
+  z-index: 115;
+}
+.container .days .day span {
+  min-width: 35px;
+  display: block;
+  text-align: center;
+}
+.container .box {
+  background-color: white;
+  padding: 20px 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+.container .box .speading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.container .box .bottom {
+  padding-top: 20px;
+  border-top: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+.container .box .bottom .span {
+  color: rgba(0, 0, 0, 0.495);
+}
+.container .box .bottom h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.container .box .bottom .right span {
+  display: block;
+  text-align: end;
+  color: rgba(0, 0, 0, 0.495);
+}
+.container .box .bottom .right span:first-child {
+  font-weight: bold;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
